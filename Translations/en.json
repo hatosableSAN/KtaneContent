@@ -84,7 +84,7 @@
     ""
   ],
   "filterRuleSeed": "Rule seed",
-  "filterSolvesStatus": "Solves Later",
+  "filterSolvesStatus": "Special Solve Order",
   "filterSouvenir": "Souvenir",
   "filterSupported": "Supported",
   "filterTP": "Twitch Plays",
@@ -130,6 +130,7 @@
   "popupView": "View",
   "profileEditorAnchor": "Profile Editor",
   "puzzleAnchor": "PUZZLES",
+  "quizAnchor": "QUIZZES",
   "searchAuthors": "Authors",
   "searchDescriptions": "Descriptions",
   "searchFind": "Find:",
