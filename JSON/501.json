@@ -1,5 +1,4 @@
 {
-  "BossStatus": "SemiBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "AnAverageArceus" ],
@@ -12,15 +11,16 @@
     "+SolvesAtEnd",
     "+NeedsOtherSolves",
     "+SolvesBeforeSome",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsSemiBoss": true,
   "ModuleID": "FiveZeroOne",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "501",
+  "NeedsOtherSolves": true,
   "Origin": "Mods",
   "Published": "2020-07-24",
-  "Quirks": "NeedsOtherSolves, SolvesBeforeSome",
+  "SolvesBeforeSome": true,
   "SortKey": "501",
   "SourceUrl": "https://github.com/AnAverageArceus/501and42",
   "Souvenir": { "Status": "NotACandidate" },

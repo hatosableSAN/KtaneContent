@@ -1,5 +1,4 @@
 {
-  "BossStatus": "SemiBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "Red Penguin" ],
@@ -11,15 +10,16 @@
   "Ignore": [
     "+SolvesAtEnd",
     "+NeedsOtherSolves",
-    "+TimeDependent",
+    "+TimeSensitive",
     "The Heart"
   ],
+  "IsSemiBoss": true,
   "ModuleID": "encryptionBingo",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Encryption Bingo",
+  "NeedsOtherSolves": true,
   "Origin": "Mods",
   "Published": "2019-10-11",
-  "Quirks": "NeedsOtherSolves",
   "SortKey": "ENCRYPTIONBINGO",
   "SourceUrl": "https://github.com/Red-P-enguin/EncryptionBingo",
   "Souvenir": { "Status": "Supported" },

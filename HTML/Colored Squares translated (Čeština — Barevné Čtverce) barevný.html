@@ -45,6 +45,14 @@
         }
     </script>
     <style>
+        @media print {
+            a[href]:after {
+                content: "";
+            }
+            a {
+                color: black;
+            }
+        }
         .red {
             color: hsla(0, 100%, 40%, 1);
         }

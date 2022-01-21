@@ -1,5 +1,4 @@
 {
-  "BossStatus": "SemiBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "Kritzy" ],
@@ -18,16 +17,16 @@
     "Mystery Module",
     "+SolvesAtEnd",
     "+SolvesBeforeSome",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsSemiBoss": true,
   "ModuleID": "Krit4CardMonte",
   "MysteryModule": "MustNotBeKey",
   "Name": "Four-Card Monte",
+  "NeedsOtherSolves": true,
   "ObsoleteSteamIDs": [ "1691902955" ],
   "Origin": "Mods",
   "Published": "2019-03-24",
-  "Quirks": "NeedsOtherSolves",
   "SortKey": "FOURCARDMONTE",
   "SourceUrl": "https://github.com/Qkrisi/KTaNE-Four-Card-Monte",
   "Souvenir": {

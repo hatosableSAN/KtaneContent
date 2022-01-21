@@ -1,6 +1,5 @@
 {
   "Author": "Timwi",
-  "BossStatus": "SemiBoss",
   "Compatibility": "Compatible",
   "DefuserDifficulty": "Easy",
   "Description": "Find the right square in a grid of colored squares and hold it at the correct number of solved modules. Tags: square, colors",
@@ -8,16 +7,16 @@
   "Ignore": [
     "+SolvesAtEnd",
     "+NeedsOtherSolves",
-    "+SolvesWithOthers",
-    "+TimeDependent",
+    "+TimeSensitive",
     "The Heart"
   ],
+  "IsSemiBoss": true,
   "ModuleID": "DividedSquaresModule",
   "MysteryModule": "MustNotBeKey",
   "Name": "Divided Squares",
+  "NeedsOtherSolves": true,
   "Origin": "Mods",
   "Published": "2018-10-30",
-  "Quirks": "NeedsOtherSolves",
   "SortKey": "DIVIDEDSQUARES",
   "SourceUrl": "https://github.com/Timwi/KtaneDividedSquares",
   "Souvenir": { "Status": "NotACandidate" },

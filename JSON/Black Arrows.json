@@ -1,5 +1,4 @@
 {
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "VFlyer" ],
@@ -10,15 +9,15 @@
   "ExpertDifficulty": "Medium",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "blackArrowsModule",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Black Arrows",
   "Origin": "Mods",
   "Published": "2020-11-29",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "BLACKARROWS",
   "SourceUrl": "https://github.com/VFlyer/ktane-multi-uncolored-arrows",
   "Souvenir": { "Status": "NotACandidate" },

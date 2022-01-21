@@ -1,21 +1,20 @@
 {
   "Author": "Quinn Wuest",
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "DefuserDifficulty": "Easy",
   "Description": "Full boss. Spin the spinner and place the correct hands and feet on the mat. Tags: 2-hands, 2-feet, 16-lights, 16-LEDs, green, yellow, blue, red",
   "ExpertDifficulty": "Hard",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "TwisterModule",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Twister",
   "Origin": "Mods",
   "Published": "2021-09-17",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "TWISTER",
   "SourceUrl": "https://github.com/JakkOfKlubs/KtaneTwister",
   "SteamID": "2604569339",

@@ -1,31 +1,34 @@
 {
-  "Compatibility": "Compatible",
-  "Contributors": {
-    "Developer": [ "GeekYiwen" ],
-    "Maintainer": [ "eXish" ]
-  },
+  "Author": "GeekYiwen",
+  "Compatibility": "Unplayable",
+  "CompatibilityExplanation": "The module throws an exception with non-English Unicode characters in module names.",
   "DefuserDifficulty": "Hard",
   "Description": "Play a game of Hangman! Tags: chalkboard, man, stick-figure, blackboard, 1-display, 2-arrows",
   "ExpertDifficulty": "Hard",
   "Ignore": [
     "+SolvesBeforeSome",
-    "+WillSolveSuddenly",
-    "+TimeDependent",
+    "Bamboozling Time Keeper",
     "Cookie Jars",
     "Divided Squares",
-    "Tax Returns"
+    "The Heart",
+    "OmegaDestroyer",
+    "Password Destroyer",
+    "The Swan",
+    "Tax Returns",
+    "The Time Keeper",
+    "Timing is Everything",
+    "Turn The Key"
   ],
   "ModuleID": "encryptedHangman",
   "MysteryModule": "MustNotBeHidden",
   "Name": "Encrypted Hangman",
-  "ObsoleteSteamIDs": [ "2097028243" ],
   "Origin": "Mods",
   "Published": "2020-05-15",
-  "Quirks": "SolvesBeforeSome",
+  "SolvesBeforeSome": true,
   "SortKey": "ENCRYPTEDHANGMAN",
-  "SourceUrl": "https://github.com/eXish/Encrypted-Hangman",
+  "SourceUrl": "https://github.com/GeekYiwen/Encrypted-Hangman",
   "Souvenir": { "Status": "Supported" },
-  "SteamID": "2637104997",
+  "SteamID": "2097028243",
   "Symbol": "Eh",
   "Type": "Regular"
 }

@@ -1,5 +1,4 @@
 {
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "Emik" ],
@@ -10,23 +9,21 @@
   "ExpertDifficulty": "Hard",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent",
-    "+WillSolveSuddenly",
-    "-The Heart"
+    "+TimeSensitive",
+    "The Swan"
   ],
+  "IsFullBoss": true,
   "ModuleID": "ForgetAnyColor",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Forget Any Color",
   "Origin": "Mods",
   "Published": "2020-10-18",
-  "Quirks": "SolvesAtEnd",
   "RuleSeedSupport": "Supported",
+  "SolvesAtEnd": true,
   "SortKey": "FORGETANYCOLOR",
   "SourceUrl": "https://github.com/Emik03/EmikModules",
   "Souvenir": { "Status": "Supported" },
   "SteamID": "2416640196",
   "Symbol": "Fac",
-  "TutorialVideoUrl": { "default": "https://youtu.be/IdrvhKR4Yh8" },
   "Type": "Regular"
 }

@@ -18,7 +18,10 @@
   "RuleSeedSupport": "Supported",
   "SortKey": "YELLOWBUTTON",
   "SourceUrl": "https://github.com/JakkOfKlubs/KtaneBundleOfABunchOfButtons",
-  "Souvenir": { "Status": "Supported" },
+  "Souvenir": {
+    "Explanation": "What were the initial square colors? What were the directions?",
+    "Status": "Considered"
+  },
   "SteamID": "2597569498",
   "Symbol": "Ybtn",
   "TutorialVideoUrl": { "default": "https://youtu.be/b_FndPpVWVk" },

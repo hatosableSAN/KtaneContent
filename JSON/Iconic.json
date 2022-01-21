@@ -1,6 +1,5 @@
 {
   "Author": "Blananas2, TasThing, Riverbui",
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [
@@ -29,14 +28,15 @@
   "ExpertDifficulty": "VeryEasy",
   "Ignore": [
     "+SolvesAtEnd",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "iconic",
   "MysteryModule": "MustNotBeKey",
   "Name": "Iconic",
   "Origin": "Mods",
   "Published": "2020-04-22",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "ICONIC",
   "SourceUrl": "https://github.com/Blananas2/ktane-iconic",
   "Souvenir": { "Status": "NotACandidate" },

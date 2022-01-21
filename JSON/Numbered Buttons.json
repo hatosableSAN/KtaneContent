@@ -3,7 +3,7 @@
   "Contributors": {
     "Developer": [ "VFlyer" ],
     "Maintainer": [ "VFlyer" ],
-    "Manual": [ "Kusane Hexaku" ]
+    "Manual": [ "Kusane" ]
   },
   "DefuserDifficulty": "VeryEasy",
   "Description": "Press some buttons based on the labels on said buttons, and a chart. Tags: numbers, 16-buttons, grid",

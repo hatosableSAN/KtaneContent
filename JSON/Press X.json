@@ -13,9 +13,6 @@
   "Souvenir": { "Status": "NotACandidate" },
   "SteamID": "1323472620",
   "Symbol": "Px",
-  "TutorialVideoUrl": {
-    "Čeština": "https://youtu.be/XGko0eQzp9A",
-    "default": "https://youtu.be/Kndhy54-AVA"
-  },
+  "TutorialVideoUrl": { "default": "https://www.youtube.com/watch?v=Kndhy54-AVA" },
   "Type": "Regular"
 }

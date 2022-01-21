@@ -1,13 +1,6 @@
 {
+  "Author": "Sean Obach",
   "Compatibility": "Compatible",
-  "Contributors": {
-    "Developer": [ "Sean Obach" ],
-    "Manual": [ "Sean Obach" ],
-    "Manual graphics": [
-      "Timwi",
-      "LuminoscityTim"
-    ]
-  },
   "DefuserDifficulty": "Hard",
   "Description": "Depending on the color of the buttons, solve the module using that color's mechanic. Tags: 7 buttons, hexagon, color, red, orange, yellow, green, blue, purple, white.",
   "ExpertDifficulty": "Hard",
@@ -19,6 +12,5 @@
   "SourceUrl": "https://github.com/obachs971/ColoredHexabuttons2",
   "SteamID": "2562200706",
   "Symbol": "Chx2",
-  "TutorialVideoUrl": { "default": "https://youtu.be/n8dnuXHq2Sw" },
   "Type": "Regular"
 }

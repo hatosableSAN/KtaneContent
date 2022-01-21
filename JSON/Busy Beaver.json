@@ -1,5 +1,4 @@
 {
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "Cooldoom5" ],
@@ -10,21 +9,20 @@
   "ExpertDifficulty": "Medium",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "busyBeaver",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Busy Beaver",
   "ObsoleteSteamIDs": [ "2154136518" ],
   "Origin": "Mods",
   "Published": "2020-07-04",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "BUSYBEAVER",
   "SourceUrl": "https://github.com/Cooldoom5/BusyBeaver",
   "Souvenir": { "Status": "NotACandidate" },
   "SteamID": "2226418044",
   "Symbol": "Busy",
-  "TutorialVideoUrl": { "default": "https://www.youtube.com/watch?v=cbivhadWHpo" },
   "Type": "Regular"
 }

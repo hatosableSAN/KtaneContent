@@ -15,7 +15,10 @@
   "RuleSeedSupport": "Supported",
   "SortKey": "PURPLEBUTTON",
   "SourceUrl": "https://github.com/JakkOfKlubs/KtaneBundleOfABunchOfButtons",
-  "Souvenir": { "Status": "Supported" },
+  "Souvenir": {
+    "Explanation": "Which digits required the light to be on/off?",
+    "Status": "Considered"
+  },
   "SteamID": "2597569498",
   "Symbol": "Pbtn",
   "TutorialVideoUrl": { "default": "https://youtu.be/e8t_mDTu2VE" },

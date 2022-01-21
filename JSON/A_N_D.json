@@ -1,5 +1,4 @@
 {
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [
@@ -16,15 +15,15 @@
   "ExpertDifficulty": "Medium",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "ANDmodule",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "A>N<D",
   "Origin": "Mods",
   "Published": "2020-06-08",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "AND",
   "SourceUrl": "https://github.com/shortc1rcuit/AND",
   "Souvenir": { "Status": "NotACandidate" },

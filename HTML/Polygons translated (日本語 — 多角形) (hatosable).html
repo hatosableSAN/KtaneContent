@@ -16,11 +16,15 @@
             display: block;
             margin: .1cm 0;
         }
+
         table {
             break-inside: avoid;
         }
-        .dark table svg {
-            filter: invert(80%);
+
+        @media print {
+            a[href]:after {
+                content: none !important;
+            }
         }
     </style>
 </head>

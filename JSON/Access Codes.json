@@ -6,7 +6,7 @@
   "ExpertDifficulty": "Easy",
   "Ignore": [
     "+SolvesBeforeSome",
-    "+TimeDependent",
+    "+TimeSensitive",
     "The Troll"
   ],
   "ModuleID": "GSAccessCodes",
@@ -14,7 +14,7 @@
   "Name": "Access Codes",
   "Origin": "Mods",
   "Published": "2021-02-07",
-  "Quirks": "SolvesBeforeSome",
+  "SolvesBeforeSome": true,
   "SortKey": "ACCESSCODES",
   "SourceUrl": "https://github.com/GhostSalt/AccessCodes",
   "Souvenir": { "Status": "NotACandidate" },

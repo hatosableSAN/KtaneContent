@@ -13,9 +13,6 @@
   "Souvenir": { "Status": "Supported" },
   "SteamID": "1352138977",
   "Symbol": "Log",
-  "TutorialVideoUrl": {
-    "Čeština": "https://youtu.be/oEUtsF6I884",
-    "default": "https://youtu.be/lF2jIiZovgM"
-  },
+  "TutorialVideoUrl": { "default": "https://www.youtube.com/watch?v=lF2jIiZovgM" },
   "Type": "Regular"
 }

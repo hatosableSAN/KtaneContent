@@ -13,9 +13,6 @@
   "Souvenir": { "Status": "NotACandidate" },
   "SteamID": "1326285431",
   "Symbol": "Eut",
-  "TutorialVideoUrl": {
-    "Čeština": "https://youtu.be/EZNQ_vEPhQA",
-    "default": "https://youtu.be/BISxoqZXZbg"
-  },
+  "TutorialVideoUrl": { "default": "https://www.youtube.com/watch?v=BISxoqZXZbg" },
   "Type": "Regular"
 }

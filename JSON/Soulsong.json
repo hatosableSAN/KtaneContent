@@ -1,5 +1,4 @@
 {
-  "BossStatus": "FullBoss",
   "Compatibility": "Compatible",
   "Contributors": {
     "Developer": [ "Cooldoom5" ],
@@ -10,15 +9,15 @@
   "ExpertDifficulty": "Medium",
   "Ignore": [
     "+SolvesAtEnd",
-    "+SolvesWithOthers",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsFullBoss": true,
   "ModuleID": "soulsong",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Soulsong",
   "Origin": "Mods",
   "Published": "2021-09-22",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "SOULSONG",
   "SourceUrl": "https://github.com/Cooldoom5/SOULSCREAM",
   "SteamID": "2443979764",

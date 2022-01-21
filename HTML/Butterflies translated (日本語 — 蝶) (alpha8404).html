@@ -13,13 +13,18 @@
         table {
             margin: 1em auto;
         }
-        .img-chart {
-            display: block;
-            width: 89%;
-            margin: 0 auto;
-        }
-        .page-content {
-            font-size: .9em;
+        @media print {
+            a[href]:after {
+                content: "";
+            }
+            .img-chart {
+                display: block;
+                width: 89%;
+                margin: 0 auto;
+            }
+            .page-content {
+                font-size: .9em;
+            }
         }
     </style>
 </head>

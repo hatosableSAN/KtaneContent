@@ -13,9 +13,6 @@
   "Souvenir": { "Status": "Supported" },
   "SteamID": "1314359857",
   "Symbol": "Hr",
-  "TutorialVideoUrl": {
-    "Čeština": "https://youtu.be/dNUcfWceMg8",
-    "default": "https://youtu.be/R9xGV8CtqX0"
-  },
+  "TutorialVideoUrl": { "default": "https://www.youtube.com/watch?v=R9xGV8CtqX0" },
   "Type": "Regular"
 }

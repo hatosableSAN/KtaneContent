@@ -6,14 +6,15 @@
   "ExpertDifficulty": "Easy",
   "Ignore": [
     "+SolvesAtEnd",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsPseudoNeedy": true,
   "ModuleID": "OutOfTime",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Out of Time",
   "Origin": "Mods",
   "Published": "2021-05-29",
-  "Quirks": "SolvesAtEnd, PseudoNeedy",
+  "SolvesAtEnd": true,
   "SortKey": "OUTOFTIME",
   "SourceUrl": "https://github.com/lotsofs/KTANE-Mods/tree/master/OutOfTime",
   "Souvenir": {

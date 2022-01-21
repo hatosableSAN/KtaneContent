@@ -6,15 +6,16 @@
   "ExpertDifficulty": "Easy",
   "Ignore": [
     "+SolvesAtEnd",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
+  "IsPseudoNeedy": true,
   "License": "Republishable",
   "ModuleID": "gemory",
   "MysteryModule": "MustNotBeHiddenOrKey",
   "Name": "Gemory",
   "Origin": "Mods",
   "Published": "2021-07-17",
-  "Quirks": "SolvesAtEnd, PseudoNeedy",
+  "SolvesAtEnd": true,
   "SortKey": "GEMORY",
   "Souvenir": { "Status": "NotACandidate" },
   "SteamID": "2547440853",

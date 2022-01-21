@@ -7,14 +7,14 @@
   "ExpertDifficulty": "VeryEasy",
   "Ignore": [
     "+SolvesAtEnd",
-    "+TimeDependent"
+    "+TimeSensitive"
   ],
   "ModuleID": "dontTouchAnything",
   "MysteryModule": "MustNotBeKey",
   "Name": "Don't Touch Anything",
   "Origin": "Mods",
   "Published": "2020-06-27",
-  "Quirks": "SolvesAtEnd",
+  "SolvesAtEnd": true,
   "SortKey": "DONTTOUCHANYTHING",
   "SourceUrl": "https://github.com/AnAverageArceus/Dont_Touch_Anything",
   "Souvenir": { "Status": "NotACandidate" },
