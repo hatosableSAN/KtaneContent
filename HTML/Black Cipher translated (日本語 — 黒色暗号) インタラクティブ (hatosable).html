@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>黒色暗号 — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/font-japanese.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+.dark table, table {
+            margin: 1em auto;
+            border: none;
+        }
+        .strip-change-one td,
+        .strip-change-one th {
+            padding: .3em .5em .2em;
+        }
+        .alpha {
+            font-size: 13px;
+        }
+        .beta {
+            font-size: 11px;
+        }
+        .tablea {
+            font-size: 14px;
+        }
+        .tableb {
+            font-size: 20px;
+            width: 100%;
+        }
+        .rotor {
+            font-size: 13px;
+            width: 100%;
+        }
+        .reflector {
+            font-size: 13px;
+            width: 100%;
+        }
+    </style>
+    <style>
+        /* Interactive */
+        #interactive {
+         font-family: "Special Elite";
+            font-size: 12.5px;
+        }
+
+        #interactive td.borderless:first-child {
+            padding: .3em;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            padding: 1px 3px;
+            border-radius: 5px;
+            border: black 2px solid;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Ultimate Cipher.svg" class="diagram">
+                <h2>モジュール詳細：黒色暗号</h2>
+                <p class="flavour-text">黒は世界の始まりを表し、この暗号はあなたの終点となるだろう。</p>
+                <p>モジュールは、3つのディスプレー、キーボード、英字が記された2つのボタン、及び現在のページを表示するボタン(送信ボタン)で構成されている。</p>
+                <p>右の矢印を押してページを移動することができる。ページは全部で2ページある。</p>
+                <p>ページ1には、上のディスプレーに6文字の単語、真ん中と下のディスプレーに単語が表示される。</p>
+            <p>ページ2には、英字とそれに続く3つのローマ数字、下のディスプレーに英字のペアが表示される。</p>
+            <p>以下のルールに従って単語を解読する。</p>
+
+        <h3>ステップ1：ダイグラフィド暗号(調整版)</h3>
+        <p>ここでは、ページ1にある暗号文と真ん中と下の単語、そして2つのボタンの英字を使用する。</p>
+        <p>真ん中と下の単語は2つの鍵を作成するために使用される。</p>
+        <p>真ん中の単語を使用して、重複した英字の2文字目以降を削除(HELLO→HE<b>L</b>O)する。アルファベット順の文字列全体から先程作成した英字を削除する。</p>
+        <p>シリアルナンバーの最初の英字のアルファベット上の位置(A = 1,B = 2...Z = 26)が奇数の場合、そのアルファベットを文字列の末尾に配置する。<br>そうでない場合、文字列の先頭に配置する。</p>
+        <p>この文字列を、鍵Aとする。</p>
+        <p>下の単語を使用して、重複した英字の2文字目以降を削除する。アルファベット順の文字列全体から先程作成した英字を削除する。</p>
+        <p>シリアルナンバーの最後の英字のアルファベット上の位置(A = 1,B = 2...Z = 26)が偶数の場合、そのアルファベットを文字列の末尾に配置する。<br>そうでない場合、文字列の先頭に配置する。</p>
+        <p>この文字列を、鍵Bとする。</p>
+        <p>ページ数(送信)ボタンの上部にあるボタンの左の英字は「#」で置き換えられる英字であり、その後鍵Aの末尾にこの英字を追加する。同じ処理を右のボタンと鍵Bに対しても行う。</p>
+        <p>鍵Aと鍵Bを左から右に、上から下へ9文字ずつの3つの段に分割する。</p>
+    </div>
+            <div class="page-footer relative-footer">ページ 1/6</div>
+        </div>
+
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+        <p>最後に、1~9のアラビア数字の文字列の上に鍵Aを置き、3×3の正方形にした読み順のアラビア数字の文字列を横に並べる。次に鍵Bを鍵Aのある数字列の下に置き、上から下へ、左から右へ並べて3×3の正方形にした1～9のアラビア数字の文字列を横に並べる。</p>
+        <h4 style="text-align:center"> 例</h4>
+        <p style="text-align:center">
+         ステップ1の単語：COMBO
+         ステップ2の単語：REFUND
+         <br>
+         シリアルナンバー：BI3FN9
+         ボタンの英字：S/A
+         </p>
+        <p style="text-align:center">
+        鍵A：COMBADEFGHIJKLNPQR#TUVWXYZS<br>
+        鍵B：#BCGHIJKLMOPQSTVWXYZREFUNDA
+        </p>
+        <table>
+        <tbody>
+        <tr><th>C</th><th>O</th><th>M</th><th>B</th><th>A</th><th>D</th><th>E</th><th>F</th><th>G</th><th>1</th><th>2</th><th>3</th></tr>
+        <tr><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>N</th><th>P</th><th>Q</th><th>R</th><th>4</th><th>5</th><th>6</th></tr>
+        <tr><th>#</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>S</th><th>7</th><th>8</th><th>9</th></tr>
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>-</th><th>-</th><th>-</th></tr>
+        <tr><th>#</th><th>B</th><th>C</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>1</th><th>4</th><th>7</th></tr>
+    <tr><th>M</th><th>O</th><th>P</th><th>Q</th><th>S</th><th>T</th><th>V</th><th>W</th><th>X</th><th>2</th><th>5</th><th>8</th></tr>
+    <tr><th>Y</th><th>Z</th><th>R</th><th>E</th><th>F</th><th>U</th><th>N</th><th>D</th><th>A</th><th>3</th><th>6</th><th>9</th></tr>
+    </tbody>
+        </table>
+        <p>上のディスプレーの暗号文を3つペアに分割する、それぞれのペアに対して以下のルールに従う。</p>
+        <ul>
+        <li>1：最初の英字を鍵Aから探す。</li>
+        <li>2：二番目の英字を鍵Bから探す。</li>
+        <li>3：最初の英字の列の中から数字を取得し、これを最初の数字とする。</li>
+        <li>4：同様に二番目の英字の列の中から数字を取得し、これを三番目の数字とする。</li>
+        <li>5：2つの英字の段の中から3×3の正方形の段を参照する。両方に含まれる数字が1つだけ存在し、それが2番目の数字となる。</li>
+        <li>6：上から下に、以前の数字の右側に数字を記録する。</li>
+        </ul>
+        <p>3つの数字の組み合わせを読み順で読み、新たな数字を獲得する。3つの数字に対して、以下のルールに従う。</p>
+    </div>
+            <div class="page-footer relative-footer">ページ 2/6</div>
+        </div>
+
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+        <ul>
+        <li>1：最初の数字を列に、二番目の数字を段に使用して最初の英字を獲得する。</li>
+        <li>2：三番目の数字を列に、二番目の数字を段に使用して二番目の英字を獲得する。</li>
+        <li><b>注意：</b>最初の英字に対しては上の正方形を使用し、二番目の英字に対しては、下の正方形を使用する。</li>
+        </ul>
+        <p>全て完了すると、新たな暗号文を得られる。</p>
+        <h4 style="text-align:center">例</h4>
+        <p style="text-align:center">
+        暗号文：LTVDPL<br>
+        鍵：上記の復号プロセスを使用
+        </p>
+        <p style="text-align:center">
+        LT -> 556<br>
+        VD -> 498<br>
+        PL -> 749<br>
+        </p>
+        <p style="text-align:center">
+        数字を上から下、左から右に再配置<br>
+            547<br>
+            594<br>
+            689<br>
+        これを左から右、上から下に読む。
+        </p>
+        <p style="text-align:center">
+        547 -> LJ<br>
+        594 -> WE<br>
+        689 -> XX<br>
+        新たな暗号化された単語：LJWEXX
+        </p>
+        <h3>ステップ2：スキュタレー転置</h3>
+        <p>ここでは、ステップ1で獲得した暗号化された単語を使用する。</p>
+        <p>まず、シリアルナンバーの二番目の英字(A = 10, B = 11, ... Z = 35)を4で割った余りに2を加えた数を取得し、必要な段数を求める。その後、6つのアスタリスク(*)を上から下に、左から右へ記録する。</p>
+        <h4 style="text-align:center">例</h4>
+        <p style="text-align:center">
+        段数：(7 % 4) + 2 = 5 <br>
+        **<br>
+        *&nbsp;&nbsp;<br>
+        *&nbsp;&nbsp;<br>
+        *&nbsp;&nbsp;<br>
+        *&nbsp;&nbsp;
+        </p>
+        <p>それぞれの暗号化された英字に対して、読み順で各アスタリスクをその文字に変換する。</p>
+        <p>最後にその英字を上から下、左から右に読む。</p>
+    </div>
+            <div class="page-footer relative-footer">ページ 3/6</div>
+        </div>
+
+        <div class="page page-bg-03">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+        <p>全て完了すると、新たな暗号文を得られる。</p>
+        <h4 style="text-align:center">例</h4>
+        <p style="text-align:center">
+        暗号化された単語：LJWEXX<br>
+        LJ<br>
+        W&nbsp;&nbsp;<br>
+        E&nbsp;&nbsp;<br>
+        X&nbsp;&nbsp;<br>
+        X&nbsp;&nbsp;<br>
+        新たな暗号化された単語：LWEXXJ
+        </p>
+        <h3>ステップ3：エニグマ暗号</h3>
+        <p>ここでは、ステップ2で獲得した暗号化された単語とページ2の3つのディスプレーを使用する。</p>
+        <p>ページ2では、ローターとリフレクターの設定、その下にローターの初期設定、一番下に文字盤の初期設定がある。</p>
+        <h3>ステップ3A：ローター/リフレクター/文字盤の設定</h3>
+        <p>上のディスプレーには、表示順にどの種類のローターを使用するか、またどのリフレクターを使用するかを示している。正しいローターローター表と正しいリフレクター表を使用し、エニグマ複合機を作成する。</p>
+        <p>ローターの設定は「下のリフレクター - 下のローター - 真ん中のローター - 上のローター」の順に読む。上のローターの上に、文字盤としてA-Zの文字列を入力する。</p>
+        <p>下の回路図を参考に、エニグマ復号機を作成するとよい。</p>
+        <p>そのディスプレーの下のローターは、各文字がどこにあるかを示す。各ローターに対して、左下の文字がその文字と同じになるまで、文字列をずらす。ローターの初期設定は「下のローター - 真ん中のローター - 上のローター」の順に読む。</p>
+        <p>文字盤の初期設定の各英字のペアに対して、文字盤の2つの英字を入れ替える。</p>
+        <table id="interactive" class="borderless"></table>
+    </div>
+            <div class="page-footer relative-footer">ページ 4/6</div>
+        </div>
+
+        <div class="page page-bg-04">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+    <h2>エニグマ回路図</h2>
+    <p style='text-align: center'><img src="img/Ultimate Cipher/EnigmaScheme.png" style="width: 16cm" /></p>
+    <p>全ての設定が完了すれば、使用準備が整う。まず、ステップ3Bを実行して、暗号化された単語の最初の英字を復号する。その後ステップ3Cを参照してローターを回転させる。</p>
+    <h3>ステップ3B：エニグマ復号機の使用</h3>
+        <ul>
+        <li>1：単語の最初の文字を取得し、文字盤の段の中からそれを探す。</li>
+        <li>2：上のローターの上の段まで下に進み、新たな英字を取得する。</li>
+        <li>3：上のローターの下の段から、先程の新たな英字を探す。</li>
+        <li>4：真ん中のローターの上の段まで下に進み、新たな英字を取得する。</li>
+        <li>5：真ん中のローターの下の段から、先程の新たな英字を探す。</li>
+        <li>6：下のローターの上の段まで下に進み、新たな英字を取得する。</li>
+        <li>7：下のローターの下の段から、先程の新たな英字を探す。</li>
+        <li>8：リフレクターの上の段まで下に進み、新たな英字を取得する。</li>
+        <li>9：リフレクターの下の段から、先程の新たな英字を探す。</li>
+        <li>10：下のローターの下の段まで上に進み、新たな英字を取得する。</li>
+        <li>11：下のローターの上の段から、先程の新たな英字を探す。</li>
+        <li>12：真ん中のローターの下の段まで上に進み、新たな英字を取得する。</li>
+        <li>13：真ん中のローターの上の段から、先程の新たな英字を探す。</li>
+        <li>14：上のローターの下の段まで上に進み、新たな英字を取得する。</li>
+        <li>15：上のローターの上の段から、先程の新たな英字を探す。</li>
+        <li>16：文字盤の段まで上に進み、復号化された英字を取得する。</li>
+        </ul>
+    </div>
+            <div class="page-footer relative-footer">ページ 5/6</div>
+        </div>
+
+        <div class="page page-bg-05">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">黒色暗号</span>
+            </div>
+            <div class="page-content">
+    <p style='text-align: center'>以下の例は、IをFに復号化する様子を示している。</p>
+
+        <p style='text-align: center'><img src="img/Ultimate Cipher/DecryptSteps.png" style="width: 16cm" /></p>
+
+        <h3>ステップ3C：ローターの回転機構</h3>
+        <p>次のセクションは、ローターの回転機構の仕組みについて説明している。</p>
+
+        <p>ローターの下段にある2つの文字の横にアスタリスクがあることに気づいたはずだ。どのローターにあるかに基づいて、次のような異なる影響を与える。</p>
+        <ul>
+        <li>真ん中のローターの左端にアスタリスクがある場合、3つ全てのローターを回転させる。</li>
+        <li>そうでなければ、アスタリスクが上のローター/右のローターの左端にアスタリスクがある場合、真ん中と上のローター/右のローターを回転させる。</li>
+        <li>そうでない場合、上のローター/右のローターのみを回転させる。</li>
+        <li>各回転は1つ左にずらす必要がある(例：A -> B, G -> H, Z -> A)。</li>
+        </ul>
+
+        <p>ステップ3Bと3Cをそれぞれの英字に対して繰り返し、復号化された単語を取得する。</p>
+
+            <p>復号化された単語を取得したら、それを送信する。入力を開始すると、全てのディスプレーが暗転し下のディスプレーに入力された文字が表示される。</p>
+
+    <p>入力を消去するには、いずれかの矢印をクリックする。ページが移動し、入力した文字列が消去される。6文字を超える入力はできないようになっている。</p>
+
+    <p>入力に問題がなければ、「SUB」と書かれたボタンを押して、回答を送信する。ミスが記録された場合、モジュールの最初のページに戻るが、暗号の再生成はされない。</p>
+          </div>
+            <div class="page-footer relative-footer">ページ 6/6</div>
+        </div>
+    </div>
+
+    <script>
+     const cyclers = {
+         "ローターI": [
+             ["E", "K", "M", "F", "L", "G", "D", "Q", "V", "Z", "N", "T", "O", "W", "Y", "H", "X", "U", "S", "P", "A", "I", "B", "R", "C", "J"],
+             ["A", "B", "C", "D*", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q*", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+         ],
+         "ローターII": [
+             ["A", "J", "D", "K", "S", "I", "R", "U", "X", "B", "L", "H", "W", "T", "M", "C", "Q", "G", "Z", "N", "P", "Y", "F", "V", "O", "E"],
+             ["A", "B", "C", "D", "E*", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R*", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+         ],
+         "ローターIII": [
+             ["B", "D", "F", "H", "J", "L", "C", "P", "R", "T", "X", "V", "Z", "N", "Y", "E", "I", "W", "G", "A", "K", "M", "U", "S", "Q", "O"],
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I*", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V*", "W", "X", "Y", "Z"],
+
+         ],
+         "ローターIV": [
+             ["E", "S", "O", "V", "P", "Z", "J", "A", "Y", "Q", "U", "I", "R", "H", "X", "L", "N", "F", "T", "G", "K", "D", "C", "M", "W", "B"],
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J*", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W*", "X", "Y", "Z"],
+
+         ],
+         "ローターV": [
+             ["V", "Z", "B", "R", "G", "I", "T", "Y", "U", "P", "S", "D", "N", "H", "L", "X", "A", "W", "M", "J", "Q", "O", "F", "E", "C", "K"],
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M*", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z*"],
+
+         ],
+         "ローターVI": [
+             ["J", "P", "G", "V", "O", "U", "M", "F", "Y", "Q", "B", "E", "N", "H", "Z", "R", "D", "K", "A", "S", "X", "L", "I", "C", "T", "W"],
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L*", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y*", "Z"],
+
+         ],
+         "ローターVII": [
+             ["N", "Z", "J", "H", "G", "R", "C", "X", "M", "Y", "S", "W", "B", "O", "U", "F", "A", "I", "V", "L", "P", "E", "K", "Q", "D", "T"],
+             ["A", "B", "C", "D", "E", "F", "G", "H*", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U*", "V", "W", "X", "Y", "Z"],
+
+         ],
+         "ローターVIII": [
+             ["F", "K", "Q", "H", "T", "L", "X", "O", "C", "B", "J", "S", "P", "D", "Z", "R", "A", "M", "E", "W", "N", "I", "U", "Y", "G", "V"],
+             ["A", "B", "C*", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P*", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+
+         ],
+         "リフレクターA": [
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+             ["L", "U", "S", "N", "P", "Q", "O", "M", "J", "I", "Y", "A", "H", "D", "G", "E", "F", "X", "C", "V", "B", "T", "Z", "R", "K", "W"],
+
+         ],
+         "リフレクターB": [
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+             ["X", "Q", "U", "M", "F", "E", "P", "O", "W", "L", "T", "J", "D", "Z", "H", "G", "B", "V", "Y", "K", "C", "R", "I", "A", "S", "N"],
+
+         ],
+         "リフレクターC": [
+             ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+             ["E", "S", "K", "O", "A", "Q", "M", "J", "Y", "H", "C", "P", "G", "T", "D", "L", "F", "U", "B", "N", "R", "X", "Z", "V", "I", "W"],
+         ],
+     };
+
+     function mod26(n) {
+         return ((n % 26) + 26) % 26;
+     }
+
+     const interactive = $("#interactive");
+
+     // Make the keyboard
+     const keyboard = $("<tr>").appendTo(interactive);
+
+     $("<td>").addClass("borderless").appendTo(keyboard);
+     // The top row of any reflector is just A-Z.
+     for (let i = 0; i < 26; i++) {
+         $("<td>").text(cyclers["リフレクターA"][0][i]).appendTo(keyboard);
+     }
+
+     // Make the cyclers
+     function makeCycler(names, controls = true) {
+         let position = 0;
+         let name = names[0];
+
+         const update = () => {
+             for (let i = 0; i < 26; i++) {
+                 topRow.children().eq(i + 1).text(cyclers[name][0][mod26(i + position)]);
+                 bottomRow.children().eq(i).text(cyclers[name][1][mod26(i + position)]);
+             }
+         };
+
+         const selector = $("<select>");
+         for (const name of names) {
+             $("<option>").attr("value", name).text(name).appendTo(selector);
+         }
+
+         selector.change(() => { name = selector.val(); update(); });
+
+         const selectorRow = $("<tr>").appendTo(interactive);
+         $("<td>").addClass("borderless").appendTo(selectorRow);
+         $("<td colspan=26>").append(selector).appendTo(selectorRow);
+
+         const topRow = $("<tr>").appendTo(interactive);
+         if (controls) {
+             const shiftLeft = $("<button>").text("←").click(() => { position++; update(); });
+             $("<td rowspan=2>").addClass("borderless").append(shiftLeft).appendTo(topRow);
+         } else {
+             $("<td rowspan=2>").addClass("borderless").appendTo(topRow);
+         }
+
+         const bottomRow = $("<tr>").appendTo(interactive);
+
+         for (let i = 0; i < 26; i++) {
+             $("<td>").appendTo(topRow);
+             $("<td>").appendTo(bottomRow);
+         }
+
+         if (controls) {
+             const shiftRight = $("<button>").text("→").click(() => { position--; update(); });
+             $("<td rowspan=2>").addClass("borderless").append(shiftRight).appendTo(topRow);
+         }
+
+         update();
+     }
+
+     // Make the rotors
+     const rotorNames = Object.keys(cyclers).filter(name => name.includes("ローター"));
+     for (let i = 0; i < 3; i++) {
+         makeCycler(rotorNames);
+     }
+
+     // Make the reflector
+     makeCycler(Object.keys(cyclers).filter(name => name.includes("リフレクター")), false);
+ </script>
+</div>
+</body>
+</html>
