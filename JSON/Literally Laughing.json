@@ -1,0 +1,20 @@
+{
+  "Author": "TracksJosh",
+  "Compatibility": "Compatible",
+  "DefuserDifficulty": "VeryEasy",
+  "Description": "Give the coconut to TracksJosh, I mean the emoji to make it laugh. Tags: coconut, one-button, emoji",
+  "ExpertDifficulty": "VeryEasy",
+  "ModuleID": "literallyLaughing",
+  "Name": "Literally Laughing",
+  "Origin": "Mods",
+  "Published": "2022-08-28",
+  "SortKey": "LITERALLYLAUGHING",
+  "SourceUrl": "https://github.com/TracksJosh/ktaneLiterallyCrying-master",
+  "SteamID": "2226425124",
+  "Symbol": "Lau",
+  "TutorialVideos": [ {
+    "Language": "English",
+    "Url": "https://youtu.be/9y8CQMUiPlA"
+  } ],
+  "Type": "Needy"
+}

@@ -13,12 +13,16 @@
   "Origin": "Mods",
   "Published": "2022-04-18",
   "SortKey": "TOMBSTONEMAZE",
-  "SourceUrl": "https://github.com/eXish/KTANETombstoneMaze",
+  "SourceUrl": "https://github.com/eXish/ktane-tombstonemaze",
   "Souvenir": {
     "Explanation": "Souvenir could ask about the initially displayed maze.",
     "Status": "Considered"
   },
   "SteamID": "2801226347",
   "Symbol": "Tmz",
+  "TutorialVideos": [ {
+    "Language": "English",
+    "Url": "https://youtu.be/OmkWRWVh6Do"
+  } ],
   "Type": "Regular"
 }
