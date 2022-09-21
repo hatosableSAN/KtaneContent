@@ -13,9 +13,10 @@
         table {
             margin: 1em auto;
         }
-        .strip-change-one td,
-        .strip-change-one th {
-            padding: .3em .5em .2em;
+        td,
+        th {
+            width: 1em;
+            height: 1em;
         }
         .alpha {
             font-size: 13px;
@@ -50,21 +51,21 @@
                 <p>ページ1には、上と真ん中のディスプレーに8文字の鍵が表示される。</p>
                 <p>以下のルールに従って単語を解読する。</p>
                 <h3>ステップ1：基数カエサル暗号</h3>
-                <p>ここでは、ページ1にある上のディスプレーの暗号文と真ん中のディスプレーにある6桁の二進数を使用する。For this, you're going to need the encrypted word on the top screen, and the number on the middle screen, both from page 1.</p>
-                <p>The number in the middle screen was used to shift the letters of the encrypted word. However the number is not in base 10.</p>
-                <p>To figure out which base the number is in, take the sum of the alphabetic positions of the letters of the encrypted word (A = 1, B = 2, ... Z = 26). Then modulo 8 the sum (subtract 8 to the sum until the number is between 0 - 7), then add 2. The resulting number is the base of the number.</p>
-                <p>To convert the number to base 10, follow the steps below:</p>
+                <p>ここでは、ページ1にある上のディスプレーの暗号文と真ん中のディスプレーにある6桁の二進数を使用する。</p>
+                <p>真ん中のディスプレーにある数字は暗号化された単語の各英字をずらすために使用される。ただし、この数字は十進数とは限らない。</p>
+                <p>基数を求めるには、暗号化された単語の各英字のアルファベット上の位置(A = 1, B = 2, ... Z = 26)を合計する。その後、合計を8でモジュロ(0から7の間の数になるまで繰り返し8を減算)し、2を加算する。結果の数字がこの数字の基数となる。</p>
+                <p>数字を十進数に変換するには、以下の手順に従う。</p>
                 <ul>
-                    <li>1：Above each of the digits in your number (middle screen), list the power of the base that the digit represents. Start at 0 on the right and increment by 1 as you go left for each digit.</li>
-                    <li>2：Multiply each digit by the power of the base.</li>
-                    <li>3：Add all the numbers together to get your base 10 number.</li>
+                    <li>1：数字(真ん中のディスプレー)の各桁の上に、その桁が表す基数のべき乗を記す。乗数は右端の0から開始し、左に一桁ずつ進むたびに1増加する。</li>
+                    <li>2：基数のべき乗と各桁の数字を乗算する。</li>
+                    <li>3：全ての数を合計すると、十進数での数字が求められる。</li>
                 </ul>
-                <p>After converting the number to base 10, add the number to each letter of the encrypted word using its alphabetic position (A = 1, B = 2...Y = 25, Z = 0), modulo 26, and convert the number back to a letter to get a new encrypted word.</p>
-                <h4 style="text-align:center">Example</h4>
+                <p>十進数に変換したら、アルファベット上の位置(A = 1, B = 2, ... Z = 26)を利用して暗号化された単語の各英字に加算し、26でモジュロし、英字に変換することで新たな暗号化された単語を得る。</p>
+                <h4 style="text-align:center">例</h4>
                 <p style="text-align:center">
-                    Encrypted word：FJHWHE<br>
-                    Number：214<br>
-                    Base：6 + 10 + 8 + 23 + 8 + 5 = 60 % 8 = 4 + 2 = 6
+                    暗号化された単語：FJHWHE<br>
+                    真ん中のディスプレーの数字：214<br>
+                    基数：6 + 10 + 8 + 23 + 8 + 5 = 60 % 8 = 4 + 2 = 6
                 </p>
             </div>
             <div class="page-footer relative-footer">ページ 1/5</div>
@@ -81,22 +82,22 @@
                     6<sup>2</sup> * 2 = 72<br>
                     6<sup>1</sup> * 1 = 6<br>
                     6<sup>0</sup> * 4 = 4<br>
-                    72 + 6 + 4 = 82
+                    72 + 6 + 4 = 82(十進数表記)
                 </p>
                 <p style="text-align:center">
-                    (Do this to make it easier for you)：82 % 26 = 4<br>
+                    (より簡単に計算するために)82 % 26 = 4<br>
                     F = 6 + 4 = 10 % 26 = 10 = J<br>
                     J = 10 + 4 = 14 % 26 = 14 = N<br>
                     H = 8 + 4 = 12 % 26 = 12 = L<br>
                     W = 23 + 4 = 27 % 26 = 1 = A<br>
                     H = 8 + 4 = 12 % 26 = 12 = L<br>
                     E = 5 + 4 = 9 % 26 = 9 = I<br>
-                    New Encrypted Word：JNLALI
+                    新たな暗号化された単語：JNLALI 
                 </p>
-                <h3>ステップ2：Grille Transposition</h3>
-                <p>For this, you will need the 8 letter keys from the top and middle screen on page 2.</p>
-                <p>Concatenate the 2 keys with the top screen going first, then turn it into a 4×4 matrix of letters.</p>
-                <p>Then take the grid below and rotate it 90 degrees clockwise X times, where X is the number of ports.</p>
+                <h3>ステップ2：グリル転置</h3>
+                <p>ここでは、ページ2にある上と真ん中のディスプレーの暗号文と真ん中のディスプレーにある8文字の鍵を使用する。</p>
+                <p>2つの鍵を上のディスプレーの文字を先頭にして連結し、4×4の行列に配置する。</p>
+                <p>その後、以下のグリッドを取得し、X回時計回りに90度回転させる。Xはポートの個数である。</p>
                 <table>
                     <tbody>
                         <tr><th>X</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
@@ -105,13 +106,13 @@
                         <tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr>
                     </tbody>
                 </table>
-                <p>Take off the letters from the 4×4 matrix you made at the same position of the Xs on the grid. Make sure you take them off in reading order. Then rotate the grid 90 degrees clockwise.</p>
-                <p>Do this 3 more times to get your decrypted key.</p>
-                <h4 style="text-align:center">Example</h4>
+                <p>4×4行列の中からグリッド上のXと同じ位置にある英字を取り出す。取り出す際は読み順で取り出すように気をつける。その後90度時計回りに回転させる。</p>
+                <p>これを追加で3回繰り返すと、暗号化された鍵を獲得できる。</p>
+                <h4 style="text-align:center">例</h4>
                 <p style="text-align:center">
-                    Top Screen：IPHSHYOC<br>
-                    Mid Screen：NAYLSMPY<br>
-                    # of Ports：5<br>
+                    上のディスプレー：IPHSHYOC<br>
+                    真ん中のディスプレー：NAYLSMPY<br>
+                    ポートの個数：5<br>
                 </p>
             </div>
             <div class="page-footer relative-footer">ページ 2/5</div>
@@ -159,7 +160,7 @@
                 </table>
                 <p style="text-align:center">SYMP-HONY-PHYS-ICAL</p>
 
-                <p style="text-align:center">Decrypted Key：SYMPHONYPHYSICAL</p><br>
+                <p style="text-align:center">復号化された鍵：SYMPHONYPHYSICAL</p><br>
             </div>
             <div class="page-footer relative-footer">ページ 3/5</div>
         </div>
@@ -169,19 +170,19 @@
                 <span class="page-header-section-title">白色暗号</span>
             </div>
             <div class="page-content">
-                <h3>ステップ3：Sean Cipher</h3>
-                <p class="flavour-text">Welcome to Sean Cipher, where the ciphers are made up and the points don't matter.</p>
-                <p>For this, you're going to need the encrypted word you got from step 1, and the decrypted key from step 2.</p>
-                <p>Take the decrypted key and remove all 2nd and more occurrences of the same letter. Next, take the entire alphabet and remove all the letters that are shown in the key.</p>
-                <p>If the number of lit indicators is even, put the alphabet at the end of the key.<br>Otherwise, place it in front of the key.</p>
-                <p>Split the 26 letter key into 2 13 letter keys and place the 2nd half under the 1st half. This will now be called "THE SEAN SHIFTER".</p>
-                <p>If the alphabetic position of the 2nd letter in the Serial Number is odd, follow Instruction Set A. Otherwise, follow Instruction Set B.</p>
-                <h3>Instruction Set A</h3>
-                <p>For each letter of the encrypted word, do the following:</p>
+                <h3>ステップ3：ショーン暗号</h3>
+                <p class="flavour-text">ショーン暗号へようこそ。この暗号はオリジナルなんだけど、そんなに気にしなくていいよ。</p>
+                <p>ここでは、ステップ1で獲得した暗号化された単語とステップ2で獲得した復号化された鍵が必要になる。</p>
+                <p>復号化された鍵を獲得し、重複する英字の2文字目以降を削除する。次に、アルファベット全体の文字列を取得し、鍵に表示された英字を削除する。</p>
+                <p>点灯したインジケーターの個数が偶数の場合、鍵の末尾にアルファベットの文字列を配置する。<br>そうでない場合、キーワードの先頭にアルファベットの文字列を配置する。</p>
+                <p>26文字の鍵を2つの長さ13の文字列に分割し前半部分の下に後半部分を配置する。これを今後「ショーン変換機」と呼ぶ。</p>
+                <p>シリアルナンバーの2番目の英字のアルファベット上の位置が奇数の場合、セットAの手順に従う。そうでない場合、セットBの手順に従う。</p>
+                <h3>手順セットA</h3>
+                <p>暗号化された単語の各英字に対して、以下の手順に従う。</p>
                 <ul>
-                    <li>Find the letter of the encrypted word in THE SEAN SHIFTER and replace with the letter above/below.</li>
-                    <li>Take the last letter of the top half of THE SEAN SHIFTER and place it at the front of the top half.</li>
-                    <li>Swap the first letter of the top half with the first letter of the bottom half of THE SEAN SHIFTER.</li>
+                    <li>暗号化された単語の英字をショーン変換機から探し、その上/下にある英字に置き換える。</li>
+                    <li>ショーン転置機の上半分の右端にある英字を、上半分の左端に配置する。</li>
+                    <li>ショーン転置機のSwap the first letter of the top half with the first letter of the bottom half of THE SEAN SHIFTER.</li>
                     <li>Take the first letter of the bottom half of THE SEAN SHIFTER and place it at the back of the bottom half.</li>
                 </ul>
                 <h3>Instruction Set B</h3>
@@ -203,7 +204,7 @@
             </div>
             <div class="page-content">
                 <p>After that you should now have your decrypted word.</p>
-                <h4 style="text-align:center">Example</h4>
+                <h4 style="text-align:center">例</h4>
                 <p style="text-align:center">
                     Encrypted Word：JNLALI<br>
                     Key：SYMPHONICALBDEFGJKQRTUVWXZ<br>
